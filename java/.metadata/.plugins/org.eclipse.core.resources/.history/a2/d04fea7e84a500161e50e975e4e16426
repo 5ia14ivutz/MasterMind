@@ -1,0 +1,9 @@
+package masterMind;
+
+import java.util.List;
+
+public class Row {
+
+	
+	private List<Pin> pinList;
+}
