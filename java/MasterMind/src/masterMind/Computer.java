@@ -2,7 +2,7 @@ package masterMind;
 
 public class Computer {
 
-	public Row generatePattern(int hallo){
+	public Row generatePattern(int number){
 		return null;
 	}
 	
