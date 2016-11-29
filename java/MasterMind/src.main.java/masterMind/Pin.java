@@ -10,7 +10,6 @@ public class Pin {
 	
 	Pin(char value) {
 		this.value = Character.getNumericValue(value);
-		System.out.println(value);
 	}
 	
 	public int getValue() {

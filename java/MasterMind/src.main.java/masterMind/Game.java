@@ -15,9 +15,11 @@ public class Game {
 		Scanner in = new Scanner(System.in);
 		
 		while(true) {
+			System.out.println("================");
 			System.out.println("Write something:");
 			Row row = readInput(in);
 			printResult(row);
+			System.out.println("================");
 		}
 		
 	}
