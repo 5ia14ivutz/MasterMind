@@ -8,16 +8,18 @@ public class Game {
 	private List<Row> rowList;
 	private static Row pattern;
 	private static Computer computer;
+	private static int rowNumbers = 4;
 	
 	public static void main(String[] args) {
 		computer = new Computer();
-		pattern = computer.generatePattern(4);
+		pattern = computer.generatePattern(rowNumbers);
 		Scanner in = new Scanner(System.in);
 		
 		while(true) {
 			System.out.println("================");
 			System.out.println("Write something:");
 			Row row = readInput(in);
+			computer.checkRow(pattern, row);
 			printResult(row);
 			System.out.println("================");
 		}
