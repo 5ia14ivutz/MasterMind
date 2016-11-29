@@ -22,7 +22,15 @@ public class Computer {
 	}
 	
 	public boolean checkRow(Row pattern, Row row){
-		
+		List<boolean> trues = new ArrayList<>();
+		for(int i = 0; i<pattern.length();i++){
+			if(pattern.get(i) == row.get(i)){
+				trues.add(true);
+			}
+			else{
+				trues.add(false);
+			}
+		}
 		return false;
 	}
 }
